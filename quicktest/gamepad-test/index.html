@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamepad Tester — Test Controller Buttons & Sticks Online Free | Quicktest</title>
+  <meta name="description" content="Test your Xbox, PlayStation, or USB controller online. Check every button, trigger, and analog stick works — free, no download, no drivers.">
+  <meta name="keywords" content="gamepad tester, controller test online, joystick test, test xbox controller, test ps4 controller">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://testquick.pro/gamepad-test">
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#2E5EAA">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Quicktest">
+  <meta property="og:title" content="Gamepad Tester — Test Controller Buttons & Sticks Online Free | Quicktest">
+  <meta property="og:description" content="Test your Xbox, PlayStation, or USB controller online. Check every button, trigger, and analog stick works — free, no download, no drivers.">
+  <meta property="og:url" content="https://testquick.pro/gamepad-test">
+  <meta property="og:image" content="https://testquick.pro/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gamepad Tester — Test Controller Buttons & Sticks Online Free | Quicktest">
+  <meta name="twitter:description" content="Test your Xbox, PlayStation, or USB controller online. Check every button, trigger, and analog stick works — free, no download, no drivers.">
+  <meta name="twitter:image" content="https://testquick.pro/og-image.png">
+  <!-- Google tag (gtag.js) — replace G-XXXXXXXXX with your real GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://testquick.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gamepad Tester",
+      "item": "https://testquick.pro/gamepad-test"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gamepad Tester",
+  "url": "https://testquick.pro/gamepad-test",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "description": "Test your Xbox, PlayStation, or USB controller online. Check every button, trigger, and analog stick works \u2014 free, no download, no drivers.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isAccessibleForFree": true,
+  "browserRequirements": "Requires JavaScript. Requires camera/microphone permission where applicable."
+}
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does this work with Xbox and PlayStation controllers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it works with any controller your browser can detect through the standard Gamepad API."}},
+    {"@type": "Question", "name": "Why isn't my controller showing up?", "acceptedAnswer": {"@type": "Answer", "text": "Press any button on it first — browsers typically require an initial input before a connected gamepad becomes visible."}},
+    {"@type": "Question", "name": "What is stick drift?", "acceptedAnswer": {"@type": "Answer", "text": "It's when an analog stick reports movement even while left untouched, usually due to wear or dust inside the stick mechanism."}}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .btn-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px;}
+  .pad-btn{
+    background:#EDEFF3;border:1px solid var(--line);border-radius:6px;
+    padding:10px 4px;text-align:center;font-size:0.72rem;color:var(--ink-soft);
+  }
+  .pad-btn.active{background:var(--mint);border-color:var(--mint);color:#04331D;font-weight:700;}
+  .stick-row{display:flex;gap:20px;margin-top:20px;flex-wrap:wrap;}
+  .stick-box{text-align:center;}
+  .stick-box .label{font-size:0.75rem;color:var(--ink-soft);margin-bottom:6px;}
+  canvas.stick{background:#EDEFF3;border-radius:50%;border:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="1.8"/>
+        <path d="M7.5 12.5L10.5 15.5L16.5 9" stroke="#33C481" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">test<span>quick</span></span>
+    </a>
+    <nav><a href="/">All tests</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Gamepad Tester</h1>
+      <p>Connect a controller (USB or Bluetooth), press any button to activate it, then press every button and move both sticks to confirm they all register.</p>
+    </div>
+
+    <div class="ad-slot leaderboard">Ad slot — 728×90 leaderboard</div>
+
+    <div class="tool-card card">
+      <h2>Controller status</h2>
+      <p class="helper" id="status-msg">No controller detected — plug one in and press any button.</p>
+
+      <div class="btn-grid" id="btn-grid"></div>
+
+      <div class="stick-row">
+        <div class="stick-box">
+          <div class="label">Left stick</div>
+          <canvas class="stick" id="stick-left" width="120" height="120"></canvas>
+        </div>
+        <div class="stick-box">
+          <div class="label">Right stick</div>
+          <canvas class="stick" id="stick-right" width="120" height="120"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-slot infeed">Ad slot — native in-content unit</div>
+
+    <div class="privacy-note">
+      Controller input is read locally by your browser's Gamepad API — nothing is recorded or transmitted.
+    </div>
+  </div>
+
+  <div class="content-block">
+  <h2>How to use the gamepad tester</h2>
+  <p>Connect your controller via USB or Bluetooth, then press any button to activate detection — most browsers require an initial button press before they'll recognize a connected gamepad. Once detected, press every button and move both analog sticks; each button highlights when pressed, and the stick diagrams track movement in real time.</p>
+
+  <h2>Why test your controller</h2>
+  <p>Controller issues — a button that doesn't register, or "stick drift" where an analog stick reports movement even when untouched — can be subtle enough to blame on the game itself rather than the hardware. This test isolates the controller completely.</p>
+
+  <h2>Troubleshooting controller issues</h2>
+  <ul>
+    <li><strong>Controller not detected at all:</strong> press any button first — many browsers won't recognize a gamepad until it receives input. Also confirm it's paired correctly at the OS level.</li>
+    <li><strong>Stick shows movement when untouched:</strong> this is stick drift, a common wear issue on analog sticks, usually caused by dust or worn internal components.</li>
+    <li><strong>Specific button doesn't register:</strong> physically inspect for debris, or compare against a different controller of the same model to rule out a game-specific mapping issue.</li>
+    <li><strong>Triggers behave like buttons instead of gradual pressure:</strong> some controllers report triggers as simple on/off rather than analog pressure — this is a hardware characteristic, not a fault.</li>
+  </ul>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq-item">
+    <h3>Does this work with Xbox and PlayStation controllers?</h3>
+    <p>Yes — it works with any controller your browser can detect through the standard Gamepad API, including Xbox, PlayStation, and most generic USB/Bluetooth controllers.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Why isn't my controller showing up?</h3>
+    <p>Press any button on it first — browsers typically require an initial input before a connected gamepad becomes visible to the page.</p>
+  </div>
+  <div class="faq-item">
+    <h3>What is stick drift?</h3>
+    <p>It's when an analog stick reports movement even while left untouched, usually due to wear or dust inside the stick mechanism — this test's stick diagram makes it immediately visible.</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Testquick.</div>
+    <div class="links"><a href="/">All tests</a><a href="/privacy">Privacy</a></div>
+  </div>
+</footer>
+
+<script>
+const BUTTON_LABELS = [
+  "A / ✕","B / ○","X / □","Y / △","LB / L1","RB / R1","LT / L2","RT / R2",
+  "Select","Start","L-Stick","R-Stick","D-Up","D-Down","D-Left","D-Right","Home"
+];
+
+const btnGrid = document.getElementById('btn-grid');
+const statusMsg = document.getElementById('status-msg');
+const leftCanvas = document.getElementById('stick-left');
+const rightCanvas = document.getElementById('stick-right');
+const leftCtx = leftCanvas.getContext('2d');
+const rightCtx = rightCanvas.getContext('2d');
+
+BUTTON_LABELS.forEach((label,i)=>{
+  const el = document.createElement('div');
+  el.className = 'pad-btn';
+  el.textContent = label;
+  el.id = 'btn-' + i;
+  btnGrid.appendChild(el);
+});
+
+function drawStick(ctx, x, y){
+  const w = ctx.canvas.width, h = ctx.canvas.height;
+  ctx.clearRect(0,0,w,h);
+  ctx.strokeStyle = '#D8DCE4';
+  ctx.beginPath();
+  ctx.arc(w/2,h/2,w/2-4,0,Math.PI*2);
+  ctx.stroke();
+  const cx = w/2 + x*(w/2-14);
+  const cy = h/2 + y*(h/2-14);
+  ctx.fillStyle = '#2E5EAA';
+  ctx.beginPath();
+  ctx.arc(cx,cy,10,0,Math.PI*2);
+  ctx.fill();
+}
+drawStick(leftCtx,0,0);
+drawStick(rightCtx,0,0);
+
+let connected = false;
+window.addEventListener('gamepadconnected', ()=>{
+  connected = true;
+  statusMsg.textContent = 'Controller connected. Press buttons and move sticks below.';
+});
+window.addEventListener('gamepaddisconnected', ()=>{
+  connected = false;
+  statusMsg.textContent = 'Controller disconnected.';
+});
+
+function poll(){
+  const pads = navigator.getGamepads ? navigator.getGamepads() : [];
+  const gp = pads && pads[0];
+  if(gp){
+    if(!connected){
+      connected = true;
+      statusMsg.textContent = 'Controller connected: ' + (gp.id || 'Unknown device');
+    }
+    gp.buttons.forEach((b,i)=>{
+      const el = document.getElementById('btn-'+i);
+      if(el){
+        if(b.pressed || b.value > 0.15) el.classList.add('active');
+        else el.classList.remove('active');
+      }
+    });
+    if(gp.axes.length >= 2) drawStick(leftCtx, gp.axes[0], gp.axes[1]);
+    if(gp.axes.length >= 4) drawStick(rightCtx, gp.axes[2], gp.axes[3]);
+  }
+  requestAnimationFrame(poll);
+}
+poll();
+</script>
+</body>
+</html>

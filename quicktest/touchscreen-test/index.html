@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Touchscreen Test — Check Touch & Multitouch Online Free | Testquick</title>
+  <meta name="description" content="Test your touchscreen online. Check touch response, accuracy, and how many simultaneous touch points your screen supports — free, no download.">
+  <meta name="keywords" content="touchscreen test, multitouch test, test my touch screen, digitizer test">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://testquick.pro/touchscreen-test">
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#2E5EAA">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Testquick">
+  <meta property="og:title" content="Touchscreen Test — Check Touch & Multitouch Online Free | Quicktest">
+  <meta property="og:description" content="Test your touchscreen online. Check touch response, accuracy, and how many simultaneous touch points your screen supports — free, no download.">
+  <meta property="og:url" content="https://testquick.pro/touchscreen-test">
+  <meta property="og:image" content="https://testquick.pro/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Touchscreen Test — Check Touch & Multitouch Online Free | Quicktest">
+  <meta name="twitter:description" content="Test your touchscreen online. Check touch response, accuracy, and how many simultaneous touch points your screen supports — free, no download.">
+  <meta name="twitter:image" content="https://testquick.pro/og-image.png">
+  <!-- Google tag (gtag.js) — replace G-XXXXXXXXX with your real GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://testquick.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Touchscreen Test",
+      "item": "https://testquick.pro/touchscreen-test"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Touchscreen Test",
+  "url": "https://testquick.pro/touchscreen-test",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "description": "Test your touchscreen online. Check touch response, accuracy, and how many simultaneous touch points your screen supports \u2014 free, no download.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isAccessibleForFree": true,
+  "browserRequirements": "Requires JavaScript. Requires camera/microphone permission where applicable."
+}
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does this record my touch input?", "acceptedAnswer": {"@type": "Answer", "text": "No. Touch coordinates are used only to draw the trail on this page and are never recorded or transmitted anywhere."}},
+    {"@type": "Question", "name": "How many touch points can this test detect?", "acceptedAnswer": {"@type": "Answer", "text": "It supports as many simultaneous touch points as your device's hardware and browser report — most modern phones and tablets support 5 or more."}},
+    {"@type": "Question", "name": "Can I test this with a mouse on a laptop?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a mouse fallback is built in, so you can click and drag to see the trail even without a touchscreen."}}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/styles.css">
+<style>
+  #touch-area{
+    width:100%;height:320px;background:#0D1420;border-radius:8px;margin-top:16px;
+    position:relative;overflow:hidden;touch-action:none;
+  }
+  .touch-dot{
+    position:absolute;width:44px;height:44px;border-radius:50%;
+    background:rgba(51,196,129,0.35);border:2px solid var(--mint);
+    transform:translate(-50%,-50%);pointer-events:none;
+  }
+  .info-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:12px;font-size:0.85rem;}
+  .info-row b{color:var(--blue);}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="1.8"/>
+        <path d="M7.5 12.5L10.5 15.5L16.5 9" stroke="#33C481" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">test<span>quick</span></span>
+    </a>
+    <nav><a href="/">All tests</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Touchscreen Test</h1>
+      <p>Touch and drag inside the box below. Try multiple fingers at once to test multitouch support and check for unresponsive areas.</p>
+    </div>
+
+    <div class="ad-slot leaderboard">Ad slot — 728×90 leaderboard</div>
+
+    <div class="tool-card card">
+      <h2>Touch area</h2>
+      <p class="helper" id="support-msg">Checking touch support…</p>
+
+      <div id="touch-area"></div>
+
+      <div class="info-row">
+        <span>Active touches: <b id="active-count">0</b></span>
+        <span>Max simultaneous seen: <b id="max-count">0</b></span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn secondary" id="reset-btn">Clear trail</button>
+      </div>
+    </div>
+
+    <div class="ad-slot infeed">Ad slot — native in-content unit</div>
+
+    <div class="privacy-note">
+      Touch coordinates are used only to draw on this page — nothing is recorded or sent anywhere.
+    </div>
+  </div>
+
+  <div class="content-block">
+  <h2>How to use the touchscreen test</h2>
+  <p>Touch and drag your finger anywhere inside the dark box above — a green trail should follow your finger precisely. Try using two or more fingers at once to test multitouch support, and check the "active touches" and "max simultaneous seen" counters.</p>
+
+  <h2>Why test your touchscreen</h2>
+  <p>Touch accuracy can degrade in specific spots — often near screen edges or around a cracked area — without being obvious during normal use, since you naturally avoid tapping where it doesn't work. This test is useful after a screen repair, or when buying a used phone or tablet.</p>
+
+  <h2>Troubleshooting touch issues</h2>
+  <ul>
+    <li><strong>Whole screen unresponsive:</strong> often points to a digitizer (touch sensor layer) failure, separate from the display itself — this typically needs a hardware repair.</li>
+    <li><strong>Only certain areas don't respond:</strong> commonly caused by a screen protector bubble, a crack, or moisture trapped under the glass.</li>
+    <li><strong>Touch registers in the wrong location:</strong> can indicate a calibration issue or physical damage to the digitizer layer.</li>
+    <li><strong>Multitouch not working:</strong> confirm your device's hardware actually supports multitouch — some older or budget devices are limited to single-touch.</li>
+  </ul>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq-item">
+    <h3>Does this record my touch input?</h3>
+    <p>No. Touch coordinates are used only to draw the trail on this page and are never recorded or transmitted anywhere.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How many touch points can this test detect?</h3>
+    <p>It supports as many simultaneous touch points as your device's hardware and browser report — most modern phones and tablets support 5 or more.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Can I test this with a mouse on a laptop?</h3>
+    <p>Yes — a mouse fallback is built in, so you can click and drag to see the trail even without a touchscreen, though it will only register a single point at a time.</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Testquick.</div>
+    <div class="links"><a href="/">All tests</a><a href="/privacy">Privacy</a></div>
+  </div>
+</footer>
+
+<script>
+const area = document.getElementById('touch-area');
+const activeCountEl = document.getElementById('active-count');
+const maxCountEl = document.getElementById('max-count');
+const supportMsg = document.getElementById('support-msg');
+const dots = new Map();
+let maxSeen = 0;
+
+const hasTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+supportMsg.textContent = hasTouch
+  ? `Touch input detected (up to ${navigator.maxTouchPoints || '?'} points reported by your device). Try tapping and dragging below.`
+  : "No touchscreen detected on this device — you can still test with a mouse click-drag as a fallback.";
+
+function updateCounts(){
+  activeCountEl.textContent = dots.size;
+  if(dots.size > maxSeen){ maxSeen = dots.size; maxCountEl.textContent = maxSeen; }
+}
+
+function placeDot(id, x, y){
+  let dot = dots.get(id);
+  const rect = area.getBoundingClientRect();
+  const relX = x - rect.left;
+  const relY = y - rect.top;
+  if(!dot){
+    dot = document.createElement('div');
+    dot.className = 'touch-dot';
+    area.appendChild(dot);
+    dots.set(id, dot);
+  }
+  dot.style.left = relX + 'px';
+  dot.style.top = relY + 'px';
+  updateCounts();
+}
+
+function removeDot(id){
+  const dot = dots.get(id);
+  if(dot){ dot.remove(); dots.delete(id); updateCounts(); }
+}
+
+area.addEventListener('touchstart', e=>{
+  e.preventDefault();
+  [...e.changedTouches].forEach(t=>placeDot(t.identifier, t.clientX, t.clientY));
+}, {passive:false});
+area.addEventListener('touchmove', e=>{
+  e.preventDefault();
+  [...e.changedTouches].forEach(t=>placeDot(t.identifier, t.clientX, t.clientY));
+}, {passive:false});
+area.addEventListener('touchend', e=>{
+  [...e.changedTouches].forEach(t=>removeDot(t.identifier));
+});
+area.addEventListener('touchcancel', e=>{
+  [...e.changedTouches].forEach(t=>removeDot(t.identifier));
+});
+
+// mouse fallback for non-touch devices
+let mouseDown = false;
+area.addEventListener('mousedown', e=>{ mouseDown = true; placeDot('mouse', e.clientX, e.clientY); });
+area.addEventListener('mousemove', e=>{ if(mouseDown) placeDot('mouse', e.clientX, e.clientY); });
+window.addEventListener('mouseup', ()=>{ mouseDown = false; removeDot('mouse'); });
+
+document.getElementById('reset-btn').addEventListener('click', ()=>{
+  dots.forEach(d=>d.remove());
+  dots.clear();
+  maxSeen = 0;
+  maxCountEl.textContent = 0;
+  updateCounts();
+});
+</script>
+</body>
+</html>
